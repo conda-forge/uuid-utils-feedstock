@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/uuid_utils-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/uuid_utils-{{ version }}.tar.gz
   sha256: 5db0e1890e8f008657ffe6ded4d9459af724ab114cfe82af1557c87545301539
 
 build:
