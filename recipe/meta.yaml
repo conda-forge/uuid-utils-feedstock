@@ -31,7 +31,7 @@ requirements:
     - maturin
     - pip
   run:
-    - python>={{ python_min }}
+    - python >={{ python_min }}
 
 
 test:
