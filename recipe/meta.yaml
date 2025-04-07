@@ -31,7 +31,7 @@ requirements:
     - maturin
     - pip
   run:
-    - python
+    - python>={{ python_min }}
 
 
 test:
@@ -43,7 +43,7 @@ test:
     - abi3audit %SP_DIR%/uuid_utils/_uuid_utils.dll -s -v --assume-minimum-abi3 {{ python_min }}       # [win]
   requires:
     - pip
-    - abi3audit # [build_platform == target_platform]
+    - abi3audit  # [build_platform == target_platform]
 
 about:
   home: https://github.com/aminalaee/uuid-utils
