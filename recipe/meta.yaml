@@ -10,7 +10,9 @@ source:
   sha256: 5db0e1890e8f008657ffe6ded4d9459af724ab114cfe82af1557c87545301539
 
 build:
-  number: 0
+  number: 1
+  python_version_independent: true   # [is_abi3]
+  skip: True                         # [is_abi3 and not is_python_min]
 
 requirements:
   build:
@@ -19,23 +21,27 @@ requirements:
     - maturin                                # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
-    - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
   host:
     - python
+    - python-abi3                            # [is_abi3]
     - maturin
     - pip
   run:
     - python
+
 
 test:
   imports:
     - uuid_utils
   commands:
     - pip check
+    - abi3audit $SP_DIR/uuid_utils/_uuid_utils.abi3.so -s -v --assume-minimum-abi3 {{ python_min }}   # [unix and build_platform == target_platform]
+    - abi3audit %SP_DIR%/uuid_utils/_uuid_utils.pyd -s -v --assume-minimum-abi3 {{ python_min }}       # [win]
   requires:
     - pip
+    - abi3audit  # [build_platform == target_platform]
 
 about:
   home: https://github.com/aminalaee/uuid-utils
