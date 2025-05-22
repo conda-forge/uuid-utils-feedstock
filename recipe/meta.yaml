@@ -1,5 +1,5 @@
 {% set name = "uuid-utils" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/uuid_utils-{{ version }}.tar.gz
-  sha256: 5db0e1890e8f008657ffe6ded4d9459af724ab114cfe82af1557c87545301539
+  sha256: 18cf2b7083da7f3cca0517647213129eb16d20d7ed0dd74b3f4f8bff2aa334ea
 
 build:
-  number: 1
-  python_version_independent: true   # [is_abi3]
-  skip: True                         # [is_abi3 and not is_python_min]
+  number: 0
+  python_version_independent: true  # [is_abi3]
+  skip: true  # [is_abi3 and not is_python_min]
 
 requirements:
   build:
