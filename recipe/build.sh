@@ -10,7 +10,7 @@ cargo-bundle-licenses \
 # Apply PEP517 to install the package
 
 export RUSTFLAGS="--cfg uuid_unstable"
-maturin build --release -i $PYTHON
+maturin build --release -i $PYTHON --features pyo3/abi3-py310
 
 cd target/wheels
 
