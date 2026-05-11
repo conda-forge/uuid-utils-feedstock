@@ -16,10 +16,6 @@ source:
 build:
   number: 0
   skip: is_abi3 and not is_python_min
-  script:
-    - if: win
-      then: build.bat
-      else: build.sh
   python:
     version_independent: true
 
