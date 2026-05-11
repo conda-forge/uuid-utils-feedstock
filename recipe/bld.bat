@@ -8,7 +8,7 @@ cargo-bundle-licenses ^
     || goto :error
 REM Use PEP517 to install the package
 set "RUSTFLAGS=--cfg uuid_unstable"
-maturin build --release -i %PYTHON%
+maturin build --release -i %PYTHON% --features pyo3/abi3-py310
 REM Install wheel
 cd target/wheels
 REM set UTF-8 mode by default
