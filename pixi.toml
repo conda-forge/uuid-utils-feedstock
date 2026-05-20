@@ -4,10 +4,10 @@
 "$schema" = "https://pixi.sh/v0.59.0/schema/manifest/schema.json"
 
 [workspace]
-name = "uuid-utils-feedstock-moritzwilksch-feedstock"
+name = "uuid-utils-feedstock"
 version = "3.61.2"  # conda-smithy version used to generate this file
-description = "Pixi configuration for conda-forge/uuid-utils-feedstock-moritzwilksch-feedstock"
-authors = ["@conda-forge/uuid-utils-feedstock-moritzwilksch"]
+description = "Pixi configuration for conda-forge/uuid-utils-feedstock"
+authors = ["@conda-forge/uuid-utils"]
 channels = ["conda-forge"]
 platforms = ["linux-64", "linux-aarch64", "linux-ppc64le", "osx-64", "win-64"]
 requires-pixi = ">=0.59.0"
@@ -22,43 +22,43 @@ cmd = "inspect_artifacts --all-packages"
 description = "List contents of all packages found in rattler-build build directory."
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock directly (without setup scripts), no particular variant specified"
+description = "Build uuid-utils-feedstock directly (without setup scripts), no particular variant specified"
 [tasks."build-linux_64_is_python_mintruepython3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_is_python_mintruepython3.10.____cpython.yaml"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock with variant linux_64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
+description = "Build uuid-utils-feedstock with variant linux_64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_64_is_python_mintruepython3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_is_python_mintruepython3.10.____cpython.yaml"
-description = "List contents of uuid-utils-feedstock-moritzwilksch-feedstock packages built for variant linux_64_is_python_mintruepython3.10.____cpython"
+description = "List contents of uuid-utils-feedstock packages built for variant linux_64_is_python_mintruepython3.10.____cpython"
 [tasks."build-linux_aarch64_is_python_mintruepython3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_is_python_mintruepython3.10.____cpython.yaml"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock with variant linux_aarch64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
+description = "Build uuid-utils-feedstock with variant linux_aarch64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_aarch64_is_python_mintruepython3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_is_python_mintruepython3.10.____cpython.yaml"
-description = "List contents of uuid-utils-feedstock-moritzwilksch-feedstock packages built for variant linux_aarch64_is_python_mintruepython3.10.____cpython"
+description = "List contents of uuid-utils-feedstock packages built for variant linux_aarch64_is_python_mintruepython3.10.____cpython"
 [tasks."build-linux_ppc64le_is_python_mintruepython3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_is_python_mintruepython3.10.____cpython.yaml"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock with variant linux_ppc64le_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
+description = "Build uuid-utils-feedstock with variant linux_ppc64le_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_ppc64le_is_python_mintruepython3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_is_python_mintruepython3.10.____cpython.yaml"
-description = "List contents of uuid-utils-feedstock-moritzwilksch-feedstock packages built for variant linux_ppc64le_is_python_mintruepython3.10.____cpython"
+description = "List contents of uuid-utils-feedstock packages built for variant linux_ppc64le_is_python_mintruepython3.10.____cpython"
 [tasks."build-osx_64_is_python_mintruepython3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_is_python_mintruepython3.10.____cpython.yaml"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock with variant osx_64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
+description = "Build uuid-utils-feedstock with variant osx_64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-osx_64_is_python_mintruepython3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_is_python_mintruepython3.10.____cpython.yaml"
-description = "List contents of uuid-utils-feedstock-moritzwilksch-feedstock packages built for variant osx_64_is_python_mintruepython3.10.____cpython"
+description = "List contents of uuid-utils-feedstock packages built for variant osx_64_is_python_mintruepython3.10.____cpython"
 [tasks."build-osx_arm64_is_python_mintruepython3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_is_python_mintruepython3.10.____cpython.yaml"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock with variant osx_arm64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
+description = "Build uuid-utils-feedstock with variant osx_arm64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-osx_arm64_is_python_mintruepython3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_is_python_mintruepython3.10.____cpython.yaml"
-description = "List contents of uuid-utils-feedstock-moritzwilksch-feedstock packages built for variant osx_arm64_is_python_mintruepython3.10.____cpython"
+description = "List contents of uuid-utils-feedstock packages built for variant osx_arm64_is_python_mintruepython3.10.____cpython"
 [tasks."build-win_64_is_python_mintruepython3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_is_python_mintruepython3.10.____cpython.yaml"
-description = "Build uuid-utils-feedstock-moritzwilksch-feedstock with variant win_64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
+description = "Build uuid-utils-feedstock with variant win_64_is_python_mintruepython3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-win_64_is_python_mintruepython3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_is_python_mintruepython3.10.____cpython.yaml"
-description = "List contents of uuid-utils-feedstock-moritzwilksch-feedstock packages built for variant win_64_is_python_mintruepython3.10.____cpython"
+description = "List contents of uuid-utils-feedstock packages built for variant win_64_is_python_mintruepython3.10.____cpython"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
