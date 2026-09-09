@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: uuid-utils
-  version: "0.17.0"
+  version: "1.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/uuid_utils-${{ version }}.tar.gz
-  sha256: abb5667a36119019b3fa320c4d10c21ebccfcc87c8a739e6a0056cee7f48dde2
+  sha256: 8ed2e0156d29c4cfa0f931b4b71b35d2705d84054f63ba07a78f7acc2eb09a5c
 
 build:
   number: 0
